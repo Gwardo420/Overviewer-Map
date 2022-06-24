@@ -85,7 +85,7 @@ function App() {
       >
       </iframe>
       
-      {menu && (
+      {menu && windowDimensions.width <= 1001 && (
         <>
           <div className="menu-nav" style={{ display: 'grid', justifyContent: 'center', alignItems: 'center', textAlign: 'center', position: 'absolute', top: '7.50vh', right: 0, width: 250, height: 200, zIndex: 999999, color: 'white' }}>
             
