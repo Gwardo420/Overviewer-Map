@@ -54,7 +54,9 @@
   height: 34px;
   width: 203px;
 
-  font-family: 'Minecraft', sans-serif;
+  font-family: 'Minecraft';
+
+  font-weight: 400;
 }
 
 .mini-button {

@@ -64,9 +64,7 @@ function App() {
               </div>
 
               <button className="connect-button">
-                <div style={{ marginTop: '-5.8px' }}>
-                  CONNECT WALLET    
-                </div>
+                CONNECT WALLET
               </button>
             </>
           )}
@@ -93,7 +91,7 @@ function App() {
         <>
           <div className="menu-nav" style={{ display: 'grid', justifyContent: 'center', alignItems: 'center', textAlign: 'center', position: 'absolute', top: '7.50vh', right: 0, width: 250, height: 200, zIndex: 999999, color: 'white' }}>
             <button className="mini-connect-button">
-              <div style={{ marginTop: '-5.8px' }}>
+              <div>
                 CONNECT WALLET    
               </div>
             </button>
