@@ -71,7 +71,7 @@ function App() {
 
           {windowDimensions.width <= 1000 && (
             <button onClick={() => setMenu(!menu)} className="mini-button">
-              <div style={{ marginTop: '-5.8px' }}>
+              <div>
                 <img style={{ display: 'auto', marginTop: 'auto', marginBottom: 'auto' }} height={15} src={lines}></img>
               </div>
             </button>
