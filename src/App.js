@@ -40,7 +40,7 @@ function App() {
         </div>
 
         <div style={{ display: 'grid', position: 'absolute', left: '45%', right: '45%', marginLeft: 'auto', marginRight: 'auto' }}>
-          <svg style={{ filter: 'drop-shadow(0px -5px 0px rgb(0 0 0 / 0.4))' }} width="3.8vh" height="3.8vh" viewBox="0 0 66 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg style={{ filter: 'drop-shadow(0px -3.8px 0px #A4DCFE)' }} width="3.8vh" height="3.8vh" viewBox="0 0 66 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16.0392 53.9848V10.72H66V0.704468H16.0392H0V10.72V53.9848V58.9926V64H66V61.0757V53.9848V42.7507V35.5977V32.7355H29.9399V42.7507H43.243V53.9848H16.0392Z" fill="white"/>
           </svg>
         </div>
@@ -88,14 +88,17 @@ function App() {
       {menu && (
         <>
           <div className="menu-nav" style={{ display: 'grid', justifyContent: 'center', alignItems: 'center', textAlign: 'center', position: 'absolute', top: '7.50vh', right: 0, width: 250, height: 200, zIndex: 999999, color: 'white' }}>
+            
             <button className="mini-connect-button">
               <div>
                 CONNECT WALLET    
               </div>
             </button>
+
             <div>WIKI</div>
             <div>MAP</div>
             <div>PARTNERS</div>
+
           </div>
         </>
       )}

@@ -24,7 +24,7 @@
   background-size: cover;
   background-position: center;
 
-  box-shadow: inset 0 9px 0px -6px #48CAFF, inset 0 -9px 0px -6px #0972D9, inset 12px 0px 0px -6px #0972D9, inset -12px 0px 0px -6px #48CAFF;
+  box-shadow: inset 0 9px 0px 0px #48CAFF, inset 0 -9px 0px 0px #0972D9, inset 12px 0px 0px 0px #0972D9, inset -12px 0px 0px 0px #48CAFF;
 }
 
 .menu-nav {
@@ -37,7 +37,7 @@
   background-size: cover;
   background-position: center;
 
-  box-shadow: inset 0 9px 0px -6px #48CAFF, inset 0 -9px 0px -6px #0972D9, inset 12px 0px 0px -6px #0972D9, inset -12px 0px 0px -6px #48CAFF;
+  box-shadow: inset 0 9px 0px 0px #48CAFF, inset 0 -9px 0px 0px #0972D9, inset 12px 0px 0px 0px #0972D9, inset -12px 0px 0px 0px #48CAFF;
 }
 
 .connect-button {
