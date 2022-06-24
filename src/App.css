@@ -11,7 +11,7 @@
 }
 
 .overviewer-nav {
-  font-family: 'Minecraft', sans-serif;
+  font-family: 'minecraft', sans-serif;
 
   display: flex;
   align-items: center;
@@ -28,7 +28,7 @@
 }
 
 .menu-nav {
-  font-family: 'Minecraft', sans-serif;
+  font-family: 'minecraft', sans-serif;
 
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@
   height: 34px;
   width: 203px;
 
-  font-family: 'Minecraft';
+  font-family: 'minecraft', sans-serif;
 
   font-weight: 400;
 }
@@ -73,7 +73,7 @@
   height: 34px;
   width: 101px;
 
-  font-family: 'Minecraft', sans-serif;
+  font-family: 'minecraft', sans-serif;
 }
 
 .mini-connect-button {
@@ -88,5 +88,5 @@
   height: 34px;
   width: 200px;
 
-  font-family: 'Minecraft', sans-serif;
+  font-family: 'minecraft', sans-serif;
 }
