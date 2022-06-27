@@ -3,27 +3,13 @@ import logo from './logo.svg';
 import lines from './three.svg';
 import './App.css';
 
-function App() {
-  const [menu, setMenu] = useState(false);
-  
-  function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-      width,
-      height
-    }
-  }
-
-  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+function App() { 
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     const frame = document.querySelector('iframe');
+  //     console.log(frame.contentWindow.document);
+  //   }, 5000)
+  // }, [])
 
   return (
     <>
@@ -46,63 +32,30 @@ function App() {
         </div>
 
         <div style={{ color: 'white', display: 'flex', alignItems: 'center', display: 'flex', marginLeft: 'auto', paddingRight: 55 }}>
+          <>
+            <a href='https://gridcraft.gitbook.io/gridcraft-documentation/' alt="wiki" onClick={() => window.open("https://gridcraft.gitbook.io/gridcraft-documentation/")} style={{ paddingLeft: '2rem', color: 'white' }}>
+              WIKI
+            </a>
 
-          {windowDimensions.width >= 1001 && (
-            <>
-              <div alt="wiki" onClick={() => window.open("https://gridcraft.gitbook.io/gridcraft-documentation/")} style={{ paddingLeft: '2rem' }}>
-                WIKI
-              </div>
+            <a href='https://grid-map.vercel.app/' onClick={() => window.open("https://grid-map.vercel.app/")} style={{ paddingLeft: '2rem', color: 'white' }}>
+              MAP
+            </a>
 
-              <div onClick={() => window.open("https://grid-map.vercel.app/")} style={{ paddingLeft: '2rem' }}>
-                MAP
-              </div>
-
-              <div onClick={() => window.open("https://gridcraft.net/")} style={{ paddingLeft: '2rem' }}>
-                PARTNERS
-              </div>
-
-              <button className="connect-button">
-                CONNECT WALLET
-              </button>
-            </>
-          )}
-
-          {windowDimensions.width <= 1000 && (
-            <button onClick={() => setMenu(!menu)} className="mini-button">
-              <div>
-                <img style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: 'auto', marginRight: 'auto' }} height={15} src={lines}></img>
-              </div>
-            </button>
-          )}
-
+            <a href='https://gridcraft.net/' onClick={() => window.open("https://gridcraft.net/")} style={{ paddingLeft: '2rem', color: 'white' }}>
+              PARTNERS
+            </a>
+          </>
         </div>
 
       </div>
-
+    
       <iframe
+        id="map_1"
         className="map"
-        src="https://grid-overviewer-staging.projecki.com/#/0/64/-1/-4/minecraft%20-%20overworld/day"
+        src="http://grid-overviewer-staging.projecki.com/#/0/64/-1/-4/minecraft%20-%20overworld/day"
       >
       </iframe>
       
-      {menu && windowDimensions.width <= 1001 && (
-        <>
-          <div className="menu-nav" style={{ display: 'grid', justifyContent: 'center', alignItems: 'center', textAlign: 'center', position: 'absolute', top: '7.50vh', right: 0, width: 250, height: 200, zIndex: 999999, color: 'white' }}>
-            
-            <button className="mini-connect-button">
-              <div>
-                CONNECT WALLET    
-              </div>
-            </button>
-
-            <div>WIKI</div>
-            <div>MAP</div>
-            <div>PARTNERS</div>
-
-          </div>
-        </>
-      )}
-
     </>
   );
 }
