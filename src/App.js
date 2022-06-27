@@ -33,15 +33,15 @@ function App() {
 
         <div style={{ color: 'white', display: 'flex', alignItems: 'center', display: 'flex', marginLeft: 'auto', paddingRight: 55 }}>
           <>
-            <a href='https://gridcraft.gitbook.io/gridcraft-documentation/' alt="wiki" onClick={() => window.open("https://gridcraft.gitbook.io/gridcraft-documentation/")} style={{ paddingLeft: '2rem', color: 'white' }}>
+            <a href='#' alt="wiki" onClick={() => window.open("https://gridcraft.gitbook.io/gridcraft-documentation/")} style={{ paddingLeft: '2rem', color: 'white' }}>
               WIKI
             </a>
 
-            <a href='https://grid-map.vercel.app/' onClick={() => window.open("https://grid-map.vercel.app/")} style={{ paddingLeft: '2rem', color: 'white' }}>
+            <a href='#' onClick={() => window.open("https://grid-map.vercel.app/")} style={{ paddingLeft: '2rem', color: 'white' }}>
               MAP
             </a>
 
-            <a href='https://gridcraft.net/' onClick={() => window.open("https://gridcraft.net/")} style={{ paddingLeft: '2rem', color: 'white' }}>
+            <a href='#' onClick={() => window.open("https://gridcraft.net/")} style={{ paddingLeft: '2rem', color: 'white' }}>
               PARTNERS
             </a>
           </>
