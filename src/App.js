@@ -52,7 +52,7 @@ function App() {
       <iframe
         id="map_1"
         className="map"
-        src="http://grid-overviewer-staging.projecki.com/#/0/64/-1/-4/minecraft%20-%20overworld/day"
+        src="https://grid-overviewer-staging.projecki.com/#/0/64/-1/-4/minecraft%20-%20overworld/day"
       >
       </iframe>
       
