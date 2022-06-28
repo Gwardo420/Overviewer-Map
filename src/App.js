@@ -37,9 +37,9 @@ function App() {
               WHITEPAPER
             </a>
 
-            <a href='#' onClick={() => window.open("https://grid-map.vercel.app/")} style={{ paddingLeft: '2rem', color: 'white' }}>
+            {/* <a href='#' onClick={() => window.open("https://grid-map.vercel.app/")} style={{ paddingLeft: '2rem', color: 'white' }}>
               MAP
-            </a>
+            </a> */}
 
             <a href='#' onClick={() => window.open("https://gridcraft.net/")} style={{ paddingLeft: '2rem', color: 'white' }}>
               PARTNERS
