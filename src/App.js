@@ -34,7 +34,7 @@ function App() {
         <div style={{ color: 'white', display: 'flex', alignItems: 'center', display: 'flex', marginLeft: 'auto', paddingRight: 55 }}>
           <>
             <a href='#' alt="wiki" onClick={() => window.open("https://gridcraft.gitbook.io/gridcraft-documentation/")} style={{ paddingLeft: '2rem', color: 'white' }}>
-              WIKI
+              WHITEPAPER
             </a>
 
             <a href='#' onClick={() => window.open("https://grid-map.vercel.app/")} style={{ paddingLeft: '2rem', color: 'white' }}>
