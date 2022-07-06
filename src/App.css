@@ -1,6 +1,12 @@
 @import url('http://fonts.cdnfonts.com/css/minecraft-4');
 
+@font-face {
+  font-family: 'minecraft', sans-serif;
+  src: url('http://fonts.cdnfonts.com/css/minecraft-4');
+}
+
 .map {
+
   display: grid;
   position: absolute;
   top: 7.50vh;
@@ -8,6 +14,7 @@
   width: 100%;
   border: transparent;
   z-index: 999999;
+
 }
 
 .overviewer-nav {
@@ -95,7 +102,7 @@
   font-size: 18px;
 
   color: white;
-  
+
   text-decoration: none;
 }
 
