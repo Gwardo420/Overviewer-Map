@@ -1,8 +1,11 @@
 @import url('http://fonts.cdnfonts.com/css/minecraft-4');
 
 @font-face {
-  font-family: 'minecraft', sans-serif;
-  src: url('http://fonts.cdnfonts.com/css/minecraft-4');
+  font-family:"minecraft";
+  src: url("./fonts/minecrafter.reg-webfont.woff") format("woff"),
+       url("./fonts/minecrafter.reg-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .map {
