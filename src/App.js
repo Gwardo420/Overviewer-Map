@@ -36,7 +36,7 @@ function App() {
           </svg>
         </a>
 
-        <div style={{ color: 'white', display: 'flex', alignItems: 'center', display: 'flex', marginLeft: 'auto', paddingRight: 55 }}>
+        <div style={{ position: 'absolute', right: 30 }}>
           <>
             <a className="hover_text" title="Whitepaper" href='#' onClick={() => window.open("https://gridcraft.gitbook.io/gridcraft-documentation/")}>
               WHITEPAPER
