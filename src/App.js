@@ -5,10 +5,11 @@ import './App.css';
 
 function App() {
 
+  const [hover, setHover] = useState(false)
+
   function getMap() {
     var iframe = document.querySelector('iframe')
     console.log(iframe.contentWindow.document)
-
   }
 
   useEffect(() => {
@@ -35,7 +36,7 @@ function App() {
           </a>
         </div>
 
-        <a href="#" onClick={() => window.open("https://www.gridcraft.net")} title="Gridcraft" style={{ display: 'grid', position: 'absolute', left: '45%', right: '45%', marginLeft: 'auto', marginRight: 'auto' }}>
+        <a href="#" onClick={() => window.open("https://www.gridcraft.net")} title="Gridcraft" style={{ display: 'grid', marginLeft: 'auto', marginRight: 'auto' }}>
           <svg style={{ filter: 'drop-shadow(0px -3.8px 0px #A4DCFE)' }} width="3.8vh" height="3.8vh" viewBox="0 0 66 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16.0392 53.9848V10.72H66V0.704468H16.0392H0V10.72V53.9848V58.9926V64H66V61.0757V53.9848V42.7507V35.5977V32.7355H29.9399V42.7507H43.243V53.9848H16.0392Z" fill="white"/>
           </svg>
@@ -43,9 +44,18 @@ function App() {
 
         <div style={{ position: 'absolute', right: 30 }}>
           <>
-            <a className="hover_text" title="Whitepaper" href='#' onClick={() => window.open("https://gridcraft.gitbook.io/gridcraft-documentation/")}>
+          {hover === false && (
+            <a onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)} className="hover_text" title="Whitepaper" href='#' onClick={() => window.open("https://gridcraft.gitbook.io/gridcraft-documentation/")}>
               WHITEPAPER
             </a>
+          )}
+
+          {hover === true && (
+            <a onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)} className="hover_text" title="Whitepaper" href='#' onClick={() => window.open("https://gridcraft.gitbook.io/gridcraft-documentation/")}>
+              WHITEPAPER
+              <hr style={{ width: '110%', position: 'absolute', height: '1px', background: 'white', marginTop: 2, display: 'grid', marginLeft: -5 }}></hr>
+            </a>
+          )}
           </>
         </div>
 
